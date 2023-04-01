@@ -1,0 +1,17 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="14dp" >
+
+    <EditText
+        android:id="@+id/custom_edId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="enter your new password"
+        android:inputType="number"
+        android:maxLength="8" />
+
+</LinearLayout>

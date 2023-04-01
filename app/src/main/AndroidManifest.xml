@@ -1,0 +1,63 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.junior.XfileCreator"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-sdk
+        android:minSdkVersion="24"
+        android:targetSdkVersion="31" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_new_final"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication3" >
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-5623140250050351~7350789052" />
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.MyApplication2" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Output"
+            android:exported="true"
+            android:parentActivityName=".FileList"
+            android:theme="@style/Theme.MyApplication2" />
+        <activity
+            android:name=".FileList"
+            android:exported="true"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.MyApplication3" />
+        <activity
+            android:name=".Settings"
+            android:exported="true"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.MyApplication3" />
+        <activity
+            android:name=".PasswordActivity"
+            android:parentActivityName=".Settings"
+            android:theme="@style/Theme.MyApplication3" />
+		<activity
+            android:name=".PasswordConfirmActivity"
+            android:parentActivityName=".FileList"
+            android:theme="@style/Theme.MyApplication3" />	
+    </application>
+
+</manifest>

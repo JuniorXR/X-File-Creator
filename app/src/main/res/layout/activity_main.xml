@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:isScrollContainer="true"
+    android:padding="18dp" >
+
+    <RelativeLayout
+        android:id="@+id/layout2LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom|center_vertical|center|center_horizontal" >
+
+        <Button
+            android:id="@+id/createBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:backgroundTint="@color/purple_500"
+            android:text="Create" />
+
+        <Button
+            android:id="@+id/outPutBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="18dp"
+            android:backgroundTint="@color/purple_500"
+            android:text="Output" />
+
+        <Button
+            android:id="@+id/filesViewId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:backgroundTint="@color/purple_500"
+            android:text="Files" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/layout2LinearLayout1"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/getNameOfFile"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ic_edit_text_background"
+                android:ems="10"
+                android:hint="Title or /s for setting"
+                android:inputType="text"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/readItId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:backgroundTint="@color/purple_500"
+                android:text="read it!" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:gravity="top|center_vertical|center|center_horizontal|left|start"
+            android:inputType="textMultiLine" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">X File Creator</string>
+	<string-array name="option_list">
+		<item>Theme</item>
+	</string-array>
+	<string-array name="theme_list">
+		<item>Light</item>
+		<item>Dark</item>
+	</string-array>
+</resources>
